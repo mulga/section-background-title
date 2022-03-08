@@ -122,3 +122,45 @@ button {
   opacity: 1;
   transition: all 500ms ease-in-out;
 }
+
+
+/* section_blog */
+
+.section_blog {
+  padding: 5em;
+}
+
+.blog_card {
+  max-width: 300px;
+}
+
+.blog_card > * {
+  margin-bottom: 0.8em;
+}
+
+.blog_tags a {
+  background-color: #000;
+  color: #fff;
+  padding: 0.7em;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+}
+
+.blog_title a {
+  color: #000;
+}
+
+.blog_title a:hover {
+  color: #f5325c;
+}
+
+.title {
+  line-height: 1.2;
+}
+
+.blog_text {
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
