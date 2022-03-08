@@ -56,7 +56,8 @@ button {
 .clients_title {
   color: #f5325c;
   font-family: "PT Serif", sans-serif;
-  font-size: 150px;
+  /* font-size: 150px; */
+  font-size: clamp(0.8125rem, -1.7245rem + 12.6852vw, 9.375rem);
   font-weight: 400;
 
   font-style: italic;
@@ -65,4 +66,59 @@ button {
   top: -50px;
   left: 48%;
   transform: translate(-50%);
+}
+
+/* portfolio-container */
+
+.portfolio-container {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  /* gap: 5px; */
+}
+
+.portfolio-card {
+  flex: 1 1 300px;
+  position: relative;
+  background-color: #f5325c;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  /* max-width: 320px; */
+  cursor: pointer;
+}
+
+.portfolio-image img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  /* height: 100%; */
+  object-position: center;
+  object-fit: cover;
+  /* transform: scale(1.1); */
+  transition: all 400ms ease-in-out;
+}
+
+.portfolio-meta {
+  text-align: center;
+  background-color: #fff;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%);
+
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.1);
+  transition: all 400ms ease-in-out;
+}
+
+.portfolio-card:hover .portfolio-meta {
+  opacity: 1;
+  transition: all 500ms ease-in-out;
 }
